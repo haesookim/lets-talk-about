@@ -1,0 +1,88 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header{
+    margin:50px;
+}
+
+.header h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#main_icon{
+    width: 75px;
+    height: 75px;
+    padding-top: 7.5px;
+}
+
+.catalogue{
+    padding: 15px;
+    text-align: center;
+}
+
+.ramen-box{
+    width: 600px;
+    height:300px;
+    align-content: center;
+}
+
+.ramen-box.dark{
+    color: white;
+}
+
+.ramen-box.light{
+    color: black;
+}
+
+.ramen-box p{
+    text-align: center;
+}
+
+.ramen-name{
+    font-size: 23px;
+    font-weight:700;
+}
+
+.ramen-photo{
+    width: 150px;
+    height: 150px;
+    margin: 15px 225px;
+}
+
+#shin{
+    background-color: rgb(177, 53, 53);
+}
+
+#jappa{
+    background-color: rgb(164, 167, 139);
+}
+
+#samyang{
+    background-color: rgb(238, 105, 43);
+}
+
+#buldak{
+    background-color: rgb(7, 2, 0);
+}
+
+#dongwonchamci{
+    background-color: rgb(255, 187, 0);
+}
+
+#jongga{
+    background-color: rgb(165, 252, 106);
+}
+
+#carbo{
+    background-color: rgb(250, 177, 207);
+}
+
+#yukgae{
+    background-color: rgb(137, 164, 255);
+}
+
+#gimchisabal{
+    background-color: rgb(253, 93, 45);
+}
