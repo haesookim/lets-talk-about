@@ -85,22 +85,103 @@ body{
 }
 
 #shin-draw .body{
-    border-top: 80px solid darkred;
+    border-top: 80px solid black;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     width: 80px;
     height: 0;
-    left: 15px;
-    bottom: 27px;
+    top: 42px;
+    position: relative;
+}
+
+
+#shin-draw .body .top-band{
+    position: absolute;
+    border-top: 70px solid darkred;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    width: 86px;
+    height: 0;
+    bottom: 10px;
+    left: -20px;
+}
+
+#shin-draw .body .top-band-circle{
+    position: absolute;
+    background-color: darkred;
+    width: 88px;
+    height: 40px;
+    border-radius: 100%;
+    bottom: -5px;
+    left: -4px;
+}
+
+#shin-draw .body .shine{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    transform: skew(10deg);
+    bottom: -5px;
+}
+
+#shin-draw .body .shadow{
+    width: 110px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 105px;
+    right: 15px;
+    background-color: rgba(82, 3, 3, 0.384);
 }
 
 #shin-draw .lid{
     width: 120px;
-    height: 50px;
+    height: 80px;
     border-radius: 100%;
     background-color: red;
     left: 15px;
-    top: 20px;
+    top: 7px;
+}
+
+#shin-draw .lid .lid-black{
+    position: absolute;
+    top:40px;
+    width: 120px;
+    height: 40px;
+    border-top: solid 1px yellow;
+    background-color: rgb(34, 34, 34);
+    border-bottom-left-radius:100% 200%;
+    border-bottom-right-radius:100% 200%;
+}
+
+#shin-draw .lid .lid-bowl{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    border-radius: 100%;
+    left: 40px;
+    top: 30px;
+}
+
+#shin-draw .lid .lid-ramen{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(255, 102, 0);
+    border-radius: 100%;
+    left: 45px;
+    bottom: 6px;
+}
+
+#shin-draw .lid .lid-text{
+    color: black;
+    font-weight: 700;
+    font-size: 50px;
+    position: relative;
+    top: -70px;
+    left: -30px;
 }
 
 #shin{
