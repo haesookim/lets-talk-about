@@ -11,20 +11,31 @@ body{
     font-size: 50px;
 }
 
-#main_icon{
+#main-icon{
     width: 75px;
     height: 75px;
     padding-top: 7.5px;
 }
 
 .catalogue{
-    padding: 15px;
+    margin: 0 auto;
+    width: fit-content;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.catalogue h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .ramen-box{
     width: 600px;
     height:300px;
+    margin: 15px;
     align-content: center;
 }
 
@@ -49,6 +60,47 @@ body{
     width: 150px;
     height: 150px;
     margin: 15px 225px;
+}
+
+.ramen-drawing{
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    justify-content: center;
+    position: relative;
+}
+
+#shin-draw .base-circle, .body, .lid{
+    position: absolute;
+    margin: 0 auto;
+}
+
+#shin-draw .base-circle{
+    width: 80px;
+    height:40px;
+    border-radius: 100%;
+    background-color: black;
+    left: 35px;
+    bottom: 10px;
+}
+
+#shin-draw .body{
+    border-top: 80px solid darkred;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    width: 80px;
+    height: 0;
+    left: 15px;
+    bottom: 27px;
+}
+
+#shin-draw .lid{
+    width: 120px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: red;
+    left: 15px;
+    top: 20px;
 }
 
 #shin{
