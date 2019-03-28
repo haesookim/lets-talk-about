@@ -2,7 +2,8 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.header{
+.header,
+.content{
     margin:50px;
 }
 
@@ -33,9 +34,9 @@ body{
 }
 
 .ramen-box{
-    width: 600px;
-    height:300px;
-    margin: 15px;
+    width: 400px;
+    height:fit-content;
+    margin: 20px;
     align-content: center;
 }
 
@@ -49,49 +50,109 @@ body{
 
 .ramen-box p{
     text-align: center;
+    margin: 20px 40px 30px 40px ;
 }
 
 .ramen-name{
     font-size: 23px;
     font-weight:700;
+    margin-top: 10px;
 }
 
 .ramen-photo{
     width: 150px;
     height: 150px;
-    margin: 15px 225px;
+    margin: 15px auto;
+    margin-bottom: 0px;
 }
 
 .ramen-drawing{
     width: 150px;
     height: 150px;
     margin: 15px auto;
+    margin-bottom: 0px;
     justify-content: center;
     position: relative;
 }
 
-#shin-draw .base-circle, .body, .lid{
+/* ramen drawings base */
+
+.ramen-drawing .base-circle, .body, .lid{
     position: absolute;
     margin: 0 auto;
 }
 
-#shin-draw .base-circle{
+.ramen-drawing .base-circle{
     width: 80px;
     height:40px;
     border-radius: 100%;
-    background-color: black;
+    background-color: white;
     left: 35px;
     bottom: 10px;
 }
 
-#shin-draw .body{
-    border-top: 80px solid black;
+.ramen-drawing .body{
+    border-top: 80px solid white;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     width: 80px;
     height: 0;
     top: 42px;
     position: relative;
+}
+
+.ramen-drawing .body .shine{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    transform: skew(10deg);
+    bottom: -5px;
+}
+
+.ramen-drawing .body .shadow{
+    width: 110px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 105px;
+    right: 15px;
+    background-color: rgba(70, 70, 70, 0.384);
+}
+
+.ramen-drawing .lid{
+    width: 120px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: blue;
+    left: 15px;
+    top: 7px;
+}
+
+.ramen-drawing .lid .lid-text{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    top: -50px;
+    left: -5px;
+    transform: rotateX(-40deg);
+}
+
+/* 
+ * 신라면 아트 
+ */
+
+#shin{
+    background-color: rgb(177, 53, 53);
+}
+
+#shin-draw .base-circle{
+    background-color: black;
+}
+
+#shin-draw .body{
+    border-top: 80px solid black;
 }
 
 
@@ -116,32 +177,12 @@ body{
     left: -4px;
 }
 
-#shin-draw .body .shine{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 10px;
-    height: 50px;
-    position: absolute;
-    transform: skew(10deg);
-    bottom: -5px;
-}
-
 #shin-draw .body .shadow{
-    width: 110px;
-    height: 80px;
-    border-radius: 100%;
-    position: relative;
-    bottom: 105px;
-    right: 15px;
     background-color: rgba(82, 3, 3, 0.384);
 }
 
 #shin-draw .lid{
-    width: 120px;
-    height: 80px;
-    border-radius: 100%;
     background-color: red;
-    left: 15px;
-    top: 7px;
 }
 
 #shin-draw .lid .lid-black{
@@ -177,19 +218,88 @@ body{
 
 #shin-draw .lid .lid-text{
     color: black;
-    font-weight: 700;
     font-size: 50px;
-    position: relative;
-    top: -70px;
+    top: -80px;
     left: -30px;
 }
 
-#shin{
-    background-color: rgb(177, 53, 53);
-}
+/*
+ * 짜파게티 아트
+ */
 
 #jappa{
     background-color: rgb(164, 167, 139);
+}
+
+#jappa-draw .base-circle{
+    background-color: rgb(199, 199, 146);
+}
+
+#jappa-draw .body{
+    border-top: 80px solid rgb(199, 199, 146);
+}
+
+#jappa-draw .body .triangle-shape{
+    position: absolute;
+    border-top: 80px solid olive;
+    border-left: 20px solid transparent;
+    border-right: 40px solid transparent;
+    width: 0px;
+    height: 0;
+    top: -72px;
+    left: -18px;
+}
+
+#jappa-draw .body .band{
+    background-color: red;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    transform: skew(-10deg);
+    bottom: 5px;
+    left: 50px;
+}
+
+#jappa-draw .lid{
+    background-color: olive;
+}
+
+#jappa-draw .lid .lid-color{
+    position: absolute;
+    top:40px;
+    width: 120px;
+    height: 40px;
+    border-top: solid 1px olive;
+    background-color: rgb(199, 199, 146);
+    border-bottom-left-radius:100% 200%;
+    border-bottom-right-radius:100% 200%;
+}
+
+#jappa-draw .lid .lid-bowl{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    background-color: rgb(255, 245, 200);
+    border-radius: 100%;
+    left: 40px;
+    top: 37px;
+}
+
+#jappa-draw .lid .lid-ramen{
+    position: relative;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(114, 58, 21);
+    border-radius: 100%;
+    left: 55px;
+    bottom: 6px;
+}
+
+#jappa-draw .lid .lid-text{
+    color: white;
+    font-size: 25px;
+    top: -50px;
+    left: -5px;
 }
 
 #samyang{
