@@ -2,9 +2,45 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#navbar-icon{
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+    padding-bottom:4px;
+}
+
+.nav-item a{
+    margin:5px;
+    text-decoration: none;
+    font-weight:300;
+    color: black;
+}
+
+#navigation-right{
+    width: fit-content;
+    display: flex;
+    margin-right: 20px;
+}
+
+#navigation a{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+#index{
+    margin-left: 40px;
+}
+
 .header,
 .content{
-    margin:50px;
+    margin:70px 50px 120px 50px;;
 }
 
 .header h1{
@@ -12,25 +48,40 @@ body{
     font-size: 50px;
 }
 
+.header p{
+
+}
+
 #main-icon{
     width: 75px;
     height: 75px;
-    padding-top: 7.5px;
+    vertical-align: middle;
+    padding-bottom: 9px;
 }
 
 .catalogue{
     margin: 0 auto;
     width: fit-content;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    background-color: lightgoldenrodyellow;
 }
 
 .catalogue h2{
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+#catalogue-text{
+    margin: 30px;
+}
+
+#catalogue-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .ramen-box{
@@ -131,12 +182,22 @@ body{
 
 .ramen-drawing .lid .lid-text{
     color: white;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 25px;
     position: relative;
-    top: -50px;
-    left: -5px;
+    top: 15px;
+    left: 3px;
     transform: rotateX(-40deg);
+}
+
+.ramen-drawing .lid .lid-bowl{
+    position: absolute;
+    border-radius: 100%;
+}
+
+.ramen-drawing .lid-circle{
+    position: absolute;
+    border-radius: 100%;
 }
 
 .ramen-drawing .lid .lid-ramen{
@@ -206,7 +267,6 @@ body{
     width: 70px;
     height: 40px;
     background-color: black;
-    border-radius: 100%;
     left: 40px;
     top: 30px;
 }
@@ -221,7 +281,9 @@ body{
 
 #shin-draw .lid .lid-text{
     color: black;
+    -webkit-text-stroke: 1px white;
     font-size: 50px;
+    top: -50px;
     left: -30px;
 }
 
@@ -282,7 +344,6 @@ body{
     width: 70px;
     height: 40px;
     background-color: rgb(255, 245, 200);
-    border-radius: 100%;
     left: 40px;
     top: 37px;
 }
@@ -297,7 +358,9 @@ body{
 
 #jappa-draw .lid .lid-text{
     color: white;
+    -webkit-text-stroke: 0.5px rgb(56, 27, 8);
     font-size: 25px;
+    top: -25px;
     left: -5px;
 }
 
@@ -323,22 +386,19 @@ body{
     -webkit-text-stroke: 0.7px white;
     transform: rotateX(-40deg) rotateY(10deg);
     top: 15px;
+    left: -2px;
 }
 
 #samyang-draw .lid-circle{
-    position: absolute;
     width: 100px;
     height: 60px;
     border: 1px solid yellow;
-    border-radius: 100%;
     background-color: transparent;
     left: 10px;
     top: 7px;
 }
 
 #samyang-draw .lid-ramen{
-    position: absolute;
-    border-radius: 100%;
     background-color: rgb(255, 245, 200);
     width: 70px;
     height: 40px;
@@ -360,12 +420,65 @@ body{
     border-top: 80px solid black;
 }
 
+#buldak-draw .lid-bowl{
+    top: 15px;
+    background-color: gray;
+    width: 90px;
+    height: 60px;
+    left: 2px;
+}
 #buldak-draw .lid-ramen{
-    background-color: rgb(255, 94, 0);
+    background-color: rgb(252, 91, 16);
+    width: 80px;
+    height: 50px;
+    top: 20px;
+    left: 5px;
+}
+
+#buldak-draw .lid-text{
+    color: red;
+    top: 15px;
+    left: 3px;
+    font-size: 22px;
+    -webkit-text-stroke: 1px white;
 }
 
 #dongwonchamci{
+    background-color: rgb(248, 217, 131);
+}
+
+#dongwonchamci .base-circle{
     background-color: rgb(255, 187, 0);
+}
+
+#dongwonchamci .body{
+    border-top: 80px solid rgb(255, 187, 0);
+}
+
+#dongwonchamci .lid{
+    background-color: rgb(255, 187, 0);
+}
+
+#dongwonchamci #outer{
+    border: 3px solid white;
+    background-color: red;
+    width: 100px;
+    height: 60px;
+    left: 7px;
+    top: 7px;
+}
+
+#dongwonchamci #inner{
+    background-color: rgb(255, 187, 0);
+    width: 85px;
+    height: 50px;
+    left: 18px;
+    top: 15px;
+}
+
+#dongwonchamci .lid-text{
+    color: blue;
+    left: 2px;
 }
 
 #jongga{
