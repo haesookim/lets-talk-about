@@ -1,5 +1,7 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #navigation{
@@ -40,7 +42,8 @@ body{
 
 .header,
 .content{
-    margin:70px 50px 120px 50px;;
+    margin :20px 0;
+    padding: 20px 50px;
 }
 
 .header h1{
@@ -48,8 +51,13 @@ body{
     font-size: 50px;
 }
 
-.header p{
+.header{
+    background-color: lightcoral;
+}
 
+p, ol, ul{
+    background-color:white;
+    margin: 50px 100px ;
 }
 
 #main-icon{
@@ -59,19 +67,39 @@ body{
     padding-bottom: 9px;
 }
 
+h2 {
+    font-size: 50px;
+    padding: 50px;
+    background-color: lightblue;
+}
+
+
+.about{
+    padding: 50px;
+    margin-bottom: 0px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+}
+
+/*within the catalogue*/
+
 .catalogue{
     margin: 0 auto;
     width: fit-content;
     text-align: center;
     background-color: lightgoldenrodyellow;
+    padding-bottom: 50px;
 }
 
 .catalogue h2{
-    width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding-top: 30px;
+    padding: 30px auto 10px;
+    width: fit-content;
     font-size: 40px;
+    background-color: lightgoldenrodyellow;
+    border-bottom: 1px solid grey;
 }
 
 #catalogue-text{
@@ -101,7 +129,8 @@ body{
 
 .ramen-box p{
     text-align: center;
-    margin: 20px 40px 30px 40px ;
+    margin: 20px 40px 30px 40px;
+    background-color: transparent;
 }
 
 .ramen-name{
